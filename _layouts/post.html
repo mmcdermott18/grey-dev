@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body class="light">
+    {% include navigation.html %}
+    <h1>{{ page.title }}</h1>
+
+    <p>
+      {{ page.category }}
+    </p>
+
+    {{ content }}
+  </body>
+</html>

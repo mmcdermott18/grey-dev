@@ -1,0 +1,9 @@
+- name: Home
+  link: /
+  version: 1
+- name: Office
+  link: /office.html
+  version: 2
+- name: Work
+  link: /work.html
+  version: 3
