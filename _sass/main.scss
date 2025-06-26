@@ -452,6 +452,19 @@ footer p {
     line-height: 1.4;
     letter-spacing: 1.2px;
   }
+  li {
+    margin: 7px 0;
+  }
+  .float li {
+    float: none;
+  }
+  .float li:nth-child(2) {
+
+  }
+  .float li:nth-child(2):before, .float li:nth-child(2):after {
+    content: "";
+    margin: 0;
+  }
   #mark {
     top: 0;
     left: 50px;
