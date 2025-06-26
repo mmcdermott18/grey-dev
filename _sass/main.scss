@@ -87,6 +87,7 @@ textarea {
 $dark-color: #141414;
 $accent-color: #FF1919;
 $light-color: #F4F0EC;
+$medium-color: #1A1A1A;
 
 html {
   font-family: "Source Sans 3", serif;
@@ -169,7 +170,44 @@ main.office {
   // min-height: calc( 100vh - 300px);
 }
 
+// work styles
+div.meta {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  align-items: end;
+}
+div.image-slider {
+  height: 300px;
+  margin-top: 15px;
+}
+div.image-slider img {
+  max-height: 100%;
+  margin-right: 20px;
+}
+.meta h2 {
+  margin-bottom: 0;
+}
+.meta h6 {
+  margin-bottom: 8px;
+}
+
 // text styles
+article h2 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 100% */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+h6 {
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: $medium-color;
+  font-size: .8rem;
+  font-weight: 400;
+}
 p {
   font-size: 1rem;
   font-style: normal;
