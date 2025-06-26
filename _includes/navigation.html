@@ -1,7 +1,7 @@
 <div id="mark">
   {% for item in site.data.navigation %}
     {% if item.version == 1 %}
-    <a href="{{ item.link }}">
+    <a href="{{ item.link | relative_url}}">
       <?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 114.27 114.27" {% if page.url == item.link %} class="current"{% endif %}><path d="M0,0v114.27h114.27V0H0ZM88.98,82.7c-3.63,2.76-7.86,4.87-12.65,6.33-4.79,1.46-9.6,2.21-14.46,2.21-6.97,0-13.22-1.49-18.77-4.46s-9.92-7.08-13.08-12.36c-3.16-5.25-4.75-11.2-4.75-17.85s1.59-12.24,4.75-17.49c3.16-5.27,7.55-9.4,13.17-12.36,1.52-.81,3.11-1.44,4.75-1.95,4.38-1.35,9.11-1.73,14.22-1.73h21.41v12.46h-19.81c-.29-.02-.56-.02-.84-.02-.33,0-.67.02-.98.02-3.89.13-7.35,1.02-10.41,2.67-3.32,1.79-5.9,4.32-7.76,7.57s-2.78,6.63-2.78,10.84.92,7.86,2.78,11.11c1.86,3.25,4.43,5.79,7.71,7.62,3.29,1.83,7.05,2.73,11.25,2.73,4.46,0,8.49-.97,12.08-2.87v-19.63h14.17v27.19Z"/></svg>
     </a>
     {% endif %}
@@ -10,14 +10,14 @@
 <div id="office">
   {% for item in site.data.navigation %}
     {% if item.version == 2 %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link | relative_url}}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
     {% endif %}
   {% endfor %}
 </div>
 <div id="work">
   {% for item in site.data.navigation %}
     {% if item.version == 3 %}
-    <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
+    <a href="{{ item.link | relative_url}}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a>
     {% endif %}
   {% endfor %}
 </div>
