@@ -6,4 +6,4 @@ _site/
 .bundle/
 vendor/
 Gemfile.lock
-.DS_store
+.DS_Store

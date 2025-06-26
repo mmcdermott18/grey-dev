@@ -2,8 +2,8 @@
   link: /
   version: 1
 - name: Office
-  link: /office.html
+  link: /office/
   version: 2
 - name: Work
-  link: /work.html
+  link: /work/
   version: 3
