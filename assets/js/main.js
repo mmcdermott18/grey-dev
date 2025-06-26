@@ -29,12 +29,12 @@ function gallery () {
   for (var i = 0; i < images.length; i++) {
     $('#dots').append("<div class='dot'></div>");
   }
-  $('#gallery').css('background-image', 'url(/assets/images/gallery/' + images[0]);
+  $('#gallery').css('background-image', 'url(assets/images/gallery/' + images[0]);
   $('.caption').text(captions[0]);
   $('.dot:nth-child(' + counter + ')').addClass('currentImage');
   $('#gallery').click(function(){
     $('.dot:nth-child(' + (end + 1) + ')').removeClass('currentImage');
-    $('#gallery').css('background-image', 'url(/assets/images/gallery/' + images[counter]);
+    $('#gallery').css('background-image', 'url(assets/images/gallery/' + images[counter]);
     $('.caption').text(captions[counter]);
     $('.dot:nth-child(' + (counter) + ')').removeClass('currentImage');
     $('.dot:nth-child(' + (counter + 1) + ')').addClass('currentImage');
