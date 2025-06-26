@@ -313,10 +313,10 @@ footer p {
   background-color: $dark-color;
   transition: fill 500ms ease;
 }
-.light #mark a:hover svg, #light a:active svg, .dark #mark a:hover svg, #dark a:active svg {
+.light #mark a:hover svg, .light a:active svg, .dark #mark a:hover svg, #dark a:active svg {
   fill: $accent-color;  
 }
-#office a.current {
+.dark #office a.current, .light #work a.current {
   color: $accent-color;
 }
 .dark #mark a svg.current {
