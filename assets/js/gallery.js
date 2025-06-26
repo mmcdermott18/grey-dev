@@ -1,7 +1,8 @@
 $(document).ready(function() {
     // run function on initial page load
     // nav();
-    // gallery();
+    randomList();
+    gallery();
     // run function on resize of the window
     $(window).resize(function() {
 

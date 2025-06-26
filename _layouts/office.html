@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body class="dark">
+    {% include navigation.html %}
+    <main class="office">
+      <article markdown="1">
+          {{ content }}
+        </article>
+        <aside markdown="1">
+        <h2>contact</h2>
+        {% include contact.html %}
+        </aside>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

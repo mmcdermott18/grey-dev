@@ -5,6 +5,8 @@ defaults:
     values:
       layout: "post"
 
+markdown: kramdown
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
