@@ -406,11 +406,26 @@ footer p {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
+@media only screen and (max-width: 1300px) {
+  /* Style adjustments for viewports that meet the condition */
+  main.office {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: end;
+    // min-height: calc( 100vh - 300px);
+  }
+}
 @media only screen and (max-width: 1000px) {
   /* Style adjustments for viewports that meet the condition */
   main {
     margin: 150px 100px;
+  }
+  main.office {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: end;
+    // min-height: calc( 100vh - 300px);
   }
   #mark {
     left: 100px;
