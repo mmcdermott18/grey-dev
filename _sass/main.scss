@@ -115,8 +115,8 @@ body.light {
   -o-background-size: cover;
   background-size: cover;
   margin: 40px;
-  width: calc(100vw - 80px);
-  height: calc(100vh - 80px);
+  width: calc(100dvw - 80px);
+  height: calc(100dvh - 80px);
   position: relative;
   cursor: pointer;
 }
@@ -438,8 +438,8 @@ footer p {
   }
   #gallery {
     margin: 25px;
-    width: calc(100vw - 50px);
-    height: calc(100vh - 50px);
+    width: calc(100dvw - 50px);
+    height: calc(100dvh - 50px);
   }
   #dots {
     bottom: 12px;
