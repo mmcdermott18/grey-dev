@@ -14,16 +14,47 @@ $(document).ready(function() {
 });
 
 function gallery () {
-  var images = [
-      "grey-001.jpg",
-      "grey-002.jpg",
-      "grey-003.jpg"
-    ];
-  var captions = [
-    "caretakers quarters",
-    "edge house",
-    "living small exhibition"
-  ]
+  function getImages(location)
+  {
+      var result;
+      $.ajax(
+      {
+          type: 'GET',
+          async: false,
+          url:  '/assets/images/gallery/images.txt',
+          success: function(images) {
+              result = images;
+          },
+          fail: function() {
+              result = null;
+          }
+      });
+      return result;
+  }
+
+  var images = getImages("images.txt").split('\n');
+  console.log(images);
+
+  function getCaptions(location)
+  {
+      var result;
+      $.ajax(
+      {
+          type: 'GET',
+          async: false,
+          url:  '/assets/images/gallery/captions.txt',
+          success: function(captions) {
+              result = captions;
+          },
+          fail: function() {
+              result = null;
+          }
+      });
+      return result;
+  }
+
+  var captions = getCaptions("captions.txt").split('\n');
+  console.log(captions);
   var counter = 1;
   var end = images.length - 1;
   for (var i = 0; i < images.length; i++) {
