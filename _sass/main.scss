@@ -107,6 +107,7 @@ body.dark {
 
 body.light {
   background-color: $light-color;
+  overflow-x: hidden;
 }
 
 #gallery {
@@ -177,9 +178,18 @@ div.meta {
   grid-gap: 25px;
   align-items: end;
 }
-div.image-slider {
+div.slider-container {
+  width: calc(100% + 150px );
   height: 300px;
   margin-top: 15px;
+  overflow-x: scroll;
+}
+.slider-container::-webkit-scrollbar {
+    display: none;
+}
+div.image-slider {
+  width: 3000px;
+  height: 300px;
 }
 div.image-slider img {
   max-height: 100%;

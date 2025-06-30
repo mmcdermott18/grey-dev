@@ -3,9 +3,7 @@ title: Living Small
 category: research
 time: 2016
 location: Seattle, WA
-imageA: "livingsmall-001.jpg"
-imageB: "livingsmall-002.jpg"
-imageC: "livingsmall-003.jpg"
+images: [ "livingsmall-001.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg" ]
 ---
 
 A banana is an edible fruit – botanically a berry – produced by several
