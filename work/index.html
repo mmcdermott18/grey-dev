@@ -14,7 +14,7 @@ layout: work
       <div id="project-{{forloop.index}}" class="image-slider">
         {% assign base = "/assets/images" %}
         {% for items in post.images %}
-            <img src="{{ base }}/{{ post.images[forloop.index0] }}">
+            <img src="{{ base }}/{{ post.images[forloop.index0] | relative_url }}">
         {% endfor %}
       </div>
     </div>
