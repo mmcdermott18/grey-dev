@@ -311,9 +311,12 @@ h2 a {
 //footer styles
 
 footer p {
-  padding: 20px 0;
   text-align: center;
   color: $light-color;
+}
+footer {
+  background-color: $dark-color;
+  padding: 20px 0;
 }
 
 // nav styles
