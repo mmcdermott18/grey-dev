@@ -109,18 +109,24 @@ body.light {
   background-color: $light-color;
   overflow-x: hidden;
 }
-
-#gallery {
-  background: url(/assets/images/gallery/grey-001.jpg) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+main#home {
   margin: 40px;
   width: calc(100dvw - 80px);
   height: calc(100dvh - 80px);
   position: relative;
   cursor: pointer;
+}
+.gallery {
+  background: url('') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100dvw - 80px);
+  height: calc(100dvh - 80px);
 }
 .caption {
   position: absolute;
@@ -180,7 +186,6 @@ div.meta {
 }
 div.slider-container {
   width: calc(100% + 150px );
-  height: 300px;
   margin-top: 15px;
   overflow-x: scroll;
 }
@@ -194,6 +199,9 @@ div.image-slider {
 div.image-slider img {
   max-height: 100%;
   margin-right: 20px;
+}
+.image-slider img:last-of-type {
+    // margin-right: 0;
 }
 .meta h2 {
   margin-bottom: 0;
@@ -476,6 +484,12 @@ footer p {
     align-items: end;
     // min-height: calc( 100vh - 300px);
   }
+  div.image-slider {
+    height: 250px;
+  }
+  div.slider-container {
+    width: calc(100% + 100px );
+  }
   #mark {
     left: 100px;
   }
@@ -485,8 +499,18 @@ footer p {
   main {
     margin: 100px 50px;
   }
-  #gallery {
+  div.image-slider {
+    height: 200px;
+  }
+  div.slider-container {
+    width: calc(100% + 50px);
+  }
+  main#home {
     margin: 25px;
+    width: calc(100dvw - 50px);
+    height: calc(100dvh - 50px);
+  }
+  .gallery {
     width: calc(100dvw - 50px);
     height: calc(100dvh - 50px);
   }
