@@ -32,22 +32,22 @@ $(document).ready(function() {
 function preload () {
   const cat = sessionStorage.getItem("visited");
   if (cat == "yes") {
-    preloader.style.display = 'none'; // Or use a fade-out effect
+    $('#preloader').css('display', 'none');
   } else {
-      setTimeout(function() {
-        const preloader = document.getElementById('preloader');
-        if (preloader) {
-          preloader.style.opacity = '0'; // Or use a fade-out effect
-          preloader.style.transition = 'opacity 2s ease';
-          setTimeout(function() {
-            preloader.style.display = 'none'; // Or use a fade-out effect
-            sessionStorage.setItem("visited", "yes");
-            console.log(cat);
-          }, 2000);
-        }
-      }, 2000);
-    }
+    setTimeout(function() {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.opacity = '0'; // Or use a fade-out effect
+        preloader.style.transition = 'opacity 2s ease';
+        setTimeout(function() {
+          preloader.style.display = 'none'; // Or use a fade-out effect
+          sessionStorage.setItem("visited", "yes");
+          console.log(cat);
+        }, 2000);
+      }
+    }, 2000);
   }
+}
 function sliderWidths () {
   var articles = $('article').length;
   for(i = 0; i < articles; i++) {

@@ -38,14 +38,7 @@ html {
  * A better looking default horizontal rule
  */
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -97,6 +90,15 @@ html {
   font-size: 16px;
 }
 
+hr {
+  display: block;
+  height: 3px;
+  border: 0;
+  border-top: 1px solid $dark-color;
+  margin: 1em 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
 }
@@ -127,6 +129,7 @@ main#home {
   left: 0;
   width: calc(100dvw - 80px);
   height: calc(100dvh - 80px);
+  cursor: e-resize;
 }
 .caption {
   position: absolute;
@@ -146,6 +149,7 @@ main#home {
   bottom: 10px;
   right: -18px;
   user-select: none;
+  cursor: default;
 }
 .dot {
   background-color: $light-color;
@@ -173,21 +177,20 @@ main.office {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   grid-gap: 100px;
-  align-items: end;
-  // min-height: calc( 100vh - 300px);
 }
 
 // work styles
 div.meta {
   display: grid;
-  grid-template-columns: 7fr 1fr 1fr 1fr;
+  grid-template-columns: 7fr 1fr .5fr 1.5fr;
   grid-gap: 25px;
   align-items: end;
 }
 div.slider-container {
   width: calc(100% + 150px );
-  margin-top: 15px;
+  margin: 15px 0 50px;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 .slider-container::-webkit-scrollbar {
     display: none;
@@ -203,7 +206,7 @@ div.image-slider img {
 .image-slider img:last-of-type {
     // margin-right: 0;
 }
-.meta h2 {
+.meta h3 {
   margin-bottom: 0;
 }
 .meta h6 {
@@ -211,13 +214,42 @@ div.image-slider img {
 }
 
 // text styles
-article h2 {
-  font-size: 64px;
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 64px; /* 100% */
+  line-height: 1; /* 100% */
   letter-spacing: 3.2px;
   text-transform: uppercase;
+}
+h3 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1; /* 100% */
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 50px 0 0;
+}
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
 }
 h6 {
   text-transform: uppercase;
@@ -233,14 +265,16 @@ p {
   line-height: 1.5;
 }
 .intro {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 500;
   line-height: 1.4;
   letter-spacing: 1.2px;
+  margin-top: 0;
 }
-aside h2 {
+aside h4 {
   margin-bottom: 5px;
+  margin-top: 0;
 }
 aside p {
   margin-top: 0;
@@ -254,21 +288,17 @@ ul {
 li {
   margin: 7px 0;
 }
-.float li {
-  float: left;
-}
-.float li:nth-child(2) {
 
-}
-.float li:nth-child(2):before, .float li:nth-child(2):after {
-  content: "//";
-  margin: 0 5px;
-}
-.intro {
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.3;
-}
+// .float li {
+//   float: left;
+// }
+// .float li:nth-child(2) {
+
+// }
+// .float li:nth-child(2):before, .float li:nth-child(2):after {
+//   content: "//";
+//   margin: 0 5px;
+// }
 .map {
   font-size: .9rem;
   font-weight: 500;
@@ -307,7 +337,18 @@ h2 a:hover, h2 a:active {
 h2 a {
   line-height: 1.6rem
 }
-
+h3 a, h3 a:link, h3 a:visited {
+  text-decoration: none;
+  color: $dark-color;
+  border: none;
+  transition: all .5s ease;
+}
+h3 a:hover, h3 a:active {
+  border: none;
+}
+h3 a {
+  line-height: 1.6rem
+}
 //footer styles
 
 footer p {
@@ -402,11 +443,11 @@ footer {
 
 #preloader svg {
   fill: $light-color;
-  width: 10vw;
+  width: 233px;
 }
 #tag {
   position: fixed;
-  bottom: 25px;
+  bottom: 13px;
 }
 
 #tag p {
@@ -508,6 +549,15 @@ footer {
     align-items: end;
     // min-height: calc( 100vh - 300px);
   }
+  // work styles
+  div.meta {
+    grid-template-columns: 5fr 1fr .5fr 1.5fr;
+    grid-gap: 15px;
+  }
+  div.image-slider {
+    width: 3000px;
+    height: 300px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   /* Style adjustments for viewports that meet the condition */
@@ -529,6 +579,20 @@ footer {
   #mark {
     left: 100px;
   }
+  // work styles
+  div.meta {
+    grid-template-columns: auto auto 1fr; 
+    grid-column-gap: 25px;
+    grid-row-gap: 5px;
+  }
+  .meta h3 {
+    // margin-bottom: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .meta h6 {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   /* Style adjustments for viewports that meet the condition */
@@ -536,7 +600,7 @@ footer {
     margin: 100px 50px;
   }
   div.image-slider {
-    height: 200px;
+    height: 250px;
   }
   div.slider-container {
     width: calc(100% + 50px);
@@ -549,6 +613,7 @@ footer {
   .gallery {
     width: calc(100dvw - 50px);
     height: calc(100dvh - 50px);
+    overflow-x: auto;
   }
   #dots {
     bottom: 12px;
@@ -590,6 +655,14 @@ footer {
     bottom: 70px;
     left: -20px;
     font-size: 2rem;
+  }
+  #preloader svg {
+    fill: $light-color;
+    width: 175px;
+  }
+  #tag {
+    position: fixed;
+    bottom: 25px;
   }
 }
 

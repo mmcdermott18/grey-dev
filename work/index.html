@@ -3,9 +3,11 @@ title: Work
 layout: work
 ---
 {% for post in site.posts %}
+  {% if post.complete == true %}
   <article>
     <div class="meta">
-      <h2><a href="{{ post.url | relative_url'}}">{{ post.title }}</a></h2>
+      <!-- <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3> -->
+      <h3>{{ post.title }}</h3>
       <h6>{{ post.category }}</h6>
       <h6>{{ post.time }}</h6>
       <h6>{{ post.location }}</h6>
@@ -19,4 +21,19 @@ layout: work
       </div>
     </div>
   </article>
+  {% endif %}
+{% endfor %}
+<hr>
+<h4>Other Projects</h4>
+{% for post in site.posts %}
+  {% if post.complete == false %}
+  <article>
+    <div class="meta">
+      <h3>{{ post.title }}</h3>
+      <h6>{{ post.category }}</h6>
+      <h6>{{ post.time }}</h6>
+      <h6>{{ post.location }}</h6>
+    </div>
+  </article>
+  {% endif %}
 {% endfor %}

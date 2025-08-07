@@ -1,9 +1,10 @@
 ---
 title: Caretakers Quarters
 category: residential
-time: 2021–2025
+time: 2025
 location: Seattle, WA
 images: ["caretakers-001.jpg", "caretakers-002.jpg", "caretakers-003.jpg", "caretakers-002.jpg", "caretakers-003.jpg"]
+complete: true
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the
 edible berry of several species of woody vines in the genus Actinidia.

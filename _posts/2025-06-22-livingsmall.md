@@ -4,6 +4,7 @@ category: research
 time: 2016
 location: Seattle, WA
 images: [ "livingsmall-001.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg" ]
+complete: true
 ---
 
 A banana is an edible fruit – botanically a berry – produced by several
