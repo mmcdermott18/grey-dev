@@ -129,7 +129,9 @@ main#home {
   left: 0;
   width: calc(100dvw - 80px);
   height: calc(100dvh - 80px);
-  cursor: e-resize;
+  cursor: url('../images/cursor-red.png') 4 12, e-resize;
+  // cursor: url('../images/cursor.png') 4 12, e-resize;
+  // cursor: url('../images/cursor-alt.png') 4 12, e-resize;
 }
 .caption {
   position: absolute;
@@ -142,6 +144,7 @@ main#home {
   color: $light-color;
   margin: 0;
   user-select: none;
+  cursor: default;
 }
 #dots {
   width: 8px;
