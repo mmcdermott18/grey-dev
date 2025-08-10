@@ -4,7 +4,7 @@ layout: work
 ---
 {% for post in site.posts %}
   {% if post.complete == true %}
-  <article>
+  <article class="work-art">
     <div class="meta">
       <!-- <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3> -->
       <h3>{{ post.title }}</h3>
@@ -25,17 +25,19 @@ layout: work
 {% endfor %}
 <hr>
 <h4>additional projects</h4>
-{% for post in site.posts %}
-  {% if post.complete == false %}
-  <article>
-    <div class="meta">
-      <h3>{{ post.title }}</h3>
-      <h6>{{ post.category }}</h6>
-      <h6>{{ post.time }}</h6>
-      <h6>{{ post.location }}</h6>
-    </div>
-  </article>
-  {% endif %}
-{% endfor %}
+<div class="addpro">
+  {% for post in site.posts %}
+    {% if post.complete == false %}
+    <article class="work-art">
+      <div class="meta">
+        <h3>{{ post.title }}</h3>
+        <h6>{{ post.category }}</h6>
+        <h6>{{ post.time }}</h6>
+        <h6>{{ post.location }}</h6>
+      </div>
+    </article>
+    {% endif %}
+  {% endfor %}
+</div>
 <hr>
 <p>*with Bohlin Cywinski Jackson</p>

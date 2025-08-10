@@ -183,6 +183,15 @@ main.office {
 }
 
 // work styles
+hr {
+  margin: 50px 0;
+}
+article.work-art {
+  margin: 50px 0;
+}
+.addpro article {
+  margin: 0;
+}
 div.meta {
   display: grid;
   grid-template-columns: 7fr 1fr .5fr 1.5fr;
@@ -191,7 +200,7 @@ div.meta {
 }
 div.slider-container {
   width: calc(100% + 150px );
-  margin: 15px 0 50px;
+  margin: 15px 0;
   overflow-x: scroll;
   overflow-y: hidden;
 }
@@ -210,10 +219,10 @@ div.image-slider img {
     // margin-right: 0;
 }
 .meta h3 {
-  margin-bottom: 0;
+  margin: 0;
 }
 .meta h6 {
-  margin-bottom: 8px;
+  margin-bottom: 0;
 }
 
 // text styles
@@ -578,6 +587,7 @@ footer {
   }
   div.slider-container {
     width: calc(100% + 100px );
+    margin-top: 10px;
   }
   #mark {
     left: 100px;
@@ -589,12 +599,14 @@ footer {
     grid-row-gap: 5px;
   }
   .meta h3 {
-    // margin-bottom: 0;
     grid-column-start: 1;
     grid-column-end: 4;
   }
   .meta h6 {
-    margin: 0;
+     margin-top: 0;
+  }
+  .addpro article.work-art {
+    margin: 15px 0 25px;
   }
 }
 @media only screen and (max-width: 600px) {
