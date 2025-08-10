@@ -3,7 +3,7 @@ title: Living Small
 category: research
 time: 2016
 location: Seattle, WA
-images: [ "livingsmall-001.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg" ]
+images: [ "livingsmall-001.jpg", "livingsmall-002.jpg", "livingsmall-003.jpg", "livingsmall-004.jpg", "livingsmall-005.jpg", "livingsmall-006.jpg" ]
 complete: true
 ---
 

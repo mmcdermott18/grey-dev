@@ -2,7 +2,7 @@
 title: Tectonics of Place
 category: research
 time: 2024
-location: Seattle, WA
+location: Norway
 images: false
 complete: false
 ---

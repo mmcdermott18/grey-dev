@@ -1,6 +1,6 @@
 ---
 title: City Canvas Remodel
-category: residential
+category: concept
 time: 2018
 location: Seattle, WA
 images: false

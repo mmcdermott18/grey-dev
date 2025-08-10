@@ -1,9 +1,9 @@
 ---
 title: Caretakers Quarters
-category: residential
+category: complete
 time: 2025
 location: Seattle, WA
-images: ["caretakers-001.jpg", "caretakers-002.jpg", "caretakers-003.jpg", "caretakers-002.jpg", "caretakers-003.jpg"]
+images: ["caretakers-001.jpg", "caretakers-002.jpg", "caretakers-003.jpg"]
 complete: true
 ---
 Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the

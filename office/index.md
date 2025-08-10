@@ -12,7 +12,7 @@ We believe architecture is a thoughtful response to its unique site, the client'
 
 *To learn more about working together, please reach out to us at [studio@grey-arch.com](mailto:studio@grey-arch.com).*
 
-#### Garrett Reynolds, AIA LEED AP
+#### Garrett Reynolds, AIA, LEED AP
 ##### Principal Architect / Founder
 
 Garrett spends his time with one foot in the city and one in nature, consistently drawing inspiration from both to inform his work. He’s drawn to the subtle details—material choices, craft, and local character—that give a place its identity. With this foundation, he approaches each project as a response to its context, designing architecture that feels rooted, intentional, and quietly transformative. 

@@ -2,12 +2,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-80QYSE9WHF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-80QYSE9WHF');
+    </script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="{{ "/assets/js/main.js" | relative_url }}"></script>  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ "/assets/css/styles.css" | relative_url }}">
+    <meta name="description" content="GREY is an architecture and design studio founded in 2022 in the Pacific Northwest and practicing nationwide.">
+    <meta property="og:title" content="GREY">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://grey-arch.com/">
+    <meta property="og:image" content="/assets/images/gallery/grey-001.jpg">
+    <meta property="og:description" content="GREY is an architecture and design studio founded in 2022 in the Pacific Northwest and practicing nationwide.">
     {% seo %}
     <!-- https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md -->
   </head>
