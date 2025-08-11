@@ -12,7 +12,7 @@ layout: work
       <h6>{{ post.time }}</h6>
       <h6>{{ post.location }}</h6>
     </div>
-    <div class="slider-container">
+    <div class="slider-container" id="slider-{{forloop.index}}">
       <div id="project-{{forloop.index}}" class="image-slider">
         {% assign base = "/assets/images" %}
         {% for items in post.images %}

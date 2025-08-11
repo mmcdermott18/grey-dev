@@ -29,6 +29,11 @@ $(document).ready(function() {
 
     })
 });
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  gsap.registerPlugin(Draggable)
+}); 
+
 function preload () {
   const cat = sessionStorage.getItem("visited");
   if (cat == "yes") {
@@ -58,6 +63,10 @@ function sliderWidths () {
     var $images = $imageContainer.find('img');
 
     var imageWidths = [];
+    Draggable.create("#project-" + articleNum, {
+      type: "x",
+      bounds: "#slider-" + articleNum
+    });
 
     // Loop through the first 5 images (or all if less than 5)
     $images.each(function(index) {
