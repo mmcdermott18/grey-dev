@@ -434,7 +434,8 @@ footer {
   color: $accent-color;
 }
 .dark #mark a svg.current {
-  fill: $accent-color;
+  // fill: $accent-color;
+  fill: blue;
   background-color: $light-color;
 }   
 
