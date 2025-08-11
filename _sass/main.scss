@@ -441,12 +441,9 @@ footer {
   color: $accent-color;
 }
 .dark #mark a svg.current {
-  // fill: $accent-color;
-  fill: yellow;
+  fill: $accent-color;
   background-color: $light-color;
 }   
-
-
 
 // preload
 #preloader {
