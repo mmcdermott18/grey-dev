@@ -88,6 +88,7 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
+  overflow: auto;
 }
 
 hr {
@@ -101,6 +102,8 @@ hr {
 
 body {
   margin: 0;
+  scrollbar-gutter: stable both-edges;
+  // overflow-x: hidden;
 }
 
 body.dark {
@@ -119,7 +122,11 @@ main#home {
   cursor: pointer;
   scrollbar-gutter: stable both-edges;
 }
+::-webkit-scrollbar {
+  // width: 0;
+} 
 .gallery {
+  scrollbar-gutter: stable both-edges;
   background: url('') no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -151,7 +158,7 @@ main#home {
   width: 8px;
   position: absolute;
   bottom: 10px;
-  right: -18px;
+  left: calc(100vw - 73px);
   user-select: none;
   cursor: default;
 }
@@ -388,7 +395,7 @@ footer {
 #office {
   transform: rotate(-90deg);
   top: 150px;
-  right: -40px;
+  left: calc(100vw - 118px);
   font-size: 3rem;
 }
 #work {
@@ -435,7 +442,7 @@ footer {
 }
 .dark #mark a svg.current {
   // fill: $accent-color;
-  fill: blue;
+  fill: yellow;
   background-color: $light-color;
 }   
 
@@ -624,18 +631,18 @@ footer {
     margin: 15px 0;
   }
   main#home {
-    margin: 25px;
-    width: calc(100dvw - 50px);
-    height: calc(100dvh - 50px);
+    margin: 30px;
+    width: calc(100dvw - 60px);
+    height: calc(100dvh - 60px);
   }
   .gallery {
-    width: calc(100dvw - 50px);
-    height: calc(100dvh - 50px);
+    width: calc(100dvw - 60px);
+    height: calc(100dvh - 60px);
     overflow-x: auto;
   }
   #dots {
     bottom: 12px;
-    right: -15px;
+    left: calc(100vw - 55px);
   }
   .intro {
     font-size: 1.4rem;
@@ -646,16 +653,16 @@ footer {
   li {
     margin: 7px 0;
   }
-  .float li {
-    float: none;
-  }
-  .float li:nth-child(2) {
+  // .float li {
+  //   float: none;
+  // }
+  // .float li:nth-child(2) {
 
-  }
-  .float li:nth-child(2):before, .float li:nth-child(2):after {
-    content: "";
-    margin: 0;
-  }
+  // }
+  // .float li:nth-child(2):before, .float li:nth-child(2):after {
+  //   content: "";
+  //   margin: 0;
+  // }
   #mark {
     top: 0;
     left: 50px;
@@ -665,13 +672,13 @@ footer {
   #office {
     transform: rotate(-90deg);
     top: 75px;
-    right: -27px;
+    left: calc(100vw - 83px);
     font-size: 2rem;
   }
   #work {
     transform: rotate(-90deg);
     bottom: 70px;
-    left: -20px;
+    left: -15px;
     font-size: 2rem;
   }
   #preloader svg {
