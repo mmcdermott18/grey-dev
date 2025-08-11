@@ -31,7 +31,7 @@ $(document).ready(function() {
 });
 
 document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(Draggable)
+  gsap.registerPlugin(Draggable, InertiaPlugin)
 }); 
 
 function preload () {
@@ -65,7 +65,8 @@ function sliderWidths () {
     var imageWidths = [];
     Draggable.create("#project-" + articleNum, {
       type: "x",
-      bounds: "#slider-" + articleNum
+      bounds: "#slider-" + articleNum,
+      inertia: true
     });
 
     // Loop through the first 5 images (or all if less than 5)
